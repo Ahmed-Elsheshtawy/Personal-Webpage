@@ -32,6 +32,10 @@ body {
     text-align: center;
     margin-bottom: 30px;
 }
+.profile-section a{
+    color: maroon;
+    text-decoration: none;
+}
 
 .profile-image {
     width: 150px;
@@ -55,11 +59,12 @@ body {
     border-color: rgba(0, 0, 0, 1);
 }
 .name {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 10px;
     line-height: 1.3;
+    font-family: monospace;
 }
 
 .tagline {
