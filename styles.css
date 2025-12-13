@@ -175,6 +175,7 @@ body {
     border: 2px solid #e0e0e0;
     border-radius: 20px;
     margin-right: 10px;
+    box-shadow: 0 3px 6px #969696;
 }
 
 .nav-link:hover {
@@ -493,4 +494,232 @@ body {
 
 .sidebar::-webkit-scrollbar-thumb:hover {
     background: #999;
+}
+
+/* Education Section */
+.education-section {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 850px;
+}
+
+.education-header {
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    color: #ffffff;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.education-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.education-item {
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    border: 3px solid #000;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border-left: 4px solid #333;
+}
+
+.education-item:hover {
+    transform: translateX(5px);
+    box-shadow: -4px 4px 12px rgba(0,0,0,0.1);
+}
+
+.education-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.education-institution {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.education-date {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    font-weight: 500;
+    padding: 6px 15px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.education-detail {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-family: monospace;
+}
+
+.education-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.education-info-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+    align-items: flex-start;
+}
+
+.info-label {
+    font-weight: 700;
+    color: #000;
+    min-width: 140px;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.info-value {
+    flex: 1;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: monospace;
+}
+
+.info-value p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments for education section */
+@media (max-width: 768px) {
+    .education-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .education-info-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .info-label {
+        min-width: auto;
+    }
+}
+
+/* Projects Section */
+.projects-section {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 850px;
+}
+
+.projects-header {
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    color: #ffffff;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.projects-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.project-item {
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    border: 3px solid #000;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border-left: 4px solid #333;
+}
+
+.project-item:hover {
+    transform: translateX(5px);
+    box-shadow: -4px 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.project-date {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    font-weight: 500;
+    padding: 6px 15px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.project-detail {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-family: monospace;
+}
+
+.project-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.project-info-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+    align-items: flex-start;
+}
+
+/* Responsive adjustments for projects section */
+@media (max-width: 768px) {
+    .project-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .project-info-row {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
