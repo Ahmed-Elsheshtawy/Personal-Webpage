@@ -241,6 +241,7 @@ body {
 /* About Section */
 .about-content {
     display: flex;
+    justify-content: stretch;
     gap: 40px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -251,7 +252,6 @@ body {
 
 .about-text {
     flex: 1;
-    max-width: 850px;
 }
 
 .about-text {
@@ -517,7 +517,6 @@ body {
 .education-section {
     margin-top: 40px;
     width: 100%;
-    max-width: 850px;
 }
 
 .education-header {
@@ -658,7 +657,6 @@ body {
 .projects-section {
     margin-top: 40px;
     width: 100%;
-    max-width: 850px;
 }
 
 .projects-header {
@@ -774,7 +772,7 @@ body {
 .contact-form {
     background-color: #ffffff;
     padding: 35px;
-    border: 3px solid #000;
+    border: 2px solid #3a3a3a;
     border-right-width: 1px;
     border-bottom-width: 1px;
     border-radius: 5px;
@@ -784,6 +782,9 @@ body {
 }
 .contact-form:hover {
     transform: scale(1.01);
+    border: 4px solid #000;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
 }
 .form-group {
     margin-bottom: 25px;
