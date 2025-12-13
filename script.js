@@ -133,3 +133,8 @@ document.addEventListener('contextmenu', function(e) {
 document.addEventListener('selectstart', function(e) {
     e.preventDefault();
 });
+
+// Disabling drag and drop for images and media
+document.addEventListener('dragstart', function(e) {
+    e.preventDefault();
+});
