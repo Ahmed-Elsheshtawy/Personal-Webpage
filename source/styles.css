@@ -318,17 +318,18 @@ body {
 }
 
 .text-link {
-    color: #000;
+    color: maroon;
+    border-bottom-color: maroon;
+    border-bottom-style: dotted;
     text-decoration: none;
-    border-bottom: 2px solid #000;
     padding-bottom: 1px;
     transition: all 0.3s ease;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .text-link:hover {
-    color: #666;
-    border-bottom-color: #666;
+    background-color: rgb(226, 191, 191);
     padding-bottom: 3px;
 }
 
