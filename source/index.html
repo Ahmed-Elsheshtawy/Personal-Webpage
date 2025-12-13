@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsheshtawy</title>
+    <link rel="stylesheet" href="styles.css" defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Fixed Sidebar -->
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="./img/personal_photo_Expanded.jpeg" alt="Profile Picture">
+            </div>
+            <h1 class="name">Ahmed Khedr Elsheshtawy</h1>
+            <p class="institution">Computer Engineering Student at Qatar University</p>
+        </div>
+
+        <div class="social-links">
+            <a href="mailto:ahmedk.elsheshtawy@gmail.com" class="social-btn" target="_blank" >
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://github.com/Ahmed-Elsheshtawy" class="social-btn" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ahmedk-elsheshtawy/" class="social-btn" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="#" class="social-btn" target="_blank">
+                <i class="fas fa-file-pdf"></i> CV (Please Contact Me)
+            </a>
+        </div>
+        <div class="copy-right">
+            &copy; Ahmed Khedr Elsheshtawy. All rights reserved.
+
+        </div>
+    </aside>
+
+    <!-- Fixed Header Navigation -->
+    <header class="header">
+        <nav class="nav-menu">
+            <a href="#about" class="nav-link active">ABOUT ME :)</a>
+            <a href="#newsroom" class="nav-link">NEWSROOM</a>
+            <a href="#projects" class="nav-link">PROJECTS</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area (Scrollable) -->
+    <main class="main-content">
+        <section id="about" class="content-section active">
+            <div class="section-header">
+                <h2>ABOUT ME :)</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        My Name is Ahmed, (I think you already know that :D). I'm a <strong>Computer Engineering student at Qatar University. I love coding, game development and hardware stuff</strong>, and I'm always eager to learn new technologies and improve my skills. In my free time, I enjoy working on personal projects, participating in hackathons, and exploring the latest trends in tech.
+                        If you wanted to contact me, <strong>feel free to reach out!</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="education-section">
+                <div class="education-header">
+                    <h3>EDUCATION</h3>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-title-row">
+                        <h4 class="education-institution">Al Furqan Secondary School</h4>
+                        <span class="education-date">August 2021 - June 2024</span>
+                    </div>
+                    <p class="education-detail">Graduated with grade of 99.56% & 1<sup>st</sup> of the class</p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-title-row">
+                        <h4 class="education-institution"><img src="/img/QU_Logo.png" class="education-logo">Qatar University</h4>
+                        <span class="education-date">January 2025 - June 2029</span>
+                    </div>
+                    <p class="education-detail">B.Sc. in Computer Engineering</p>
+                    <div class="education-info">
+                        <div class="education-info-row">
+                            <span class="info-label">GPA:</span>
+                            <span class="info-value">3.9/4.0</span>
+                        </div>
+                        <div class="education-info-row">
+                            <span class="info-label">Qualities:</span>
+                            <div class="info-value">
+                                <p>Received a fully funded Academic Admission Scholarship</p>
+                                <p>On the Dean's List (June 2025 - Present.)</p>
+                            </div>
+                        </div>
+                        <div class="education-info-row">
+                            <span class="info-label">Relevant Courses:</span>
+                            <span class="info-value">Object-Oriented Programming, Discrete Math</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Projects Section-->
+        <section id="projects" class="content-section">
+            <div class="section-header">
+                <h2>PROJECTS</h2>
+            </div>
+
+            <div class="projects-section">
+                <div class="projects-header">
+                    <h3>UNITY</h3>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <h4 class="project-name">Endless Carnage</h4>
+                        <span class="project-date">February 2022</span>
+                    </div>
+                    <p class="project-detail">2D Platform Shooter Game made with Unity!</p>
+                    <div class="project-info">
+                        <div class="project-info-row">
+                            <span class="info-label">Technologies:</span>
+                            <span class="info-value">Unity Engine, C#</span>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">Features:</span>
+                            <div class="info-value">
+                                <p>Health system, Projectile system, Enemy Path System</p>
+                            </div>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">Download:</span>
+                            <span class="info-value"><a href="https://doomzzz.itch.io/endless-carnage" target="_blank" class="text-link">View on Itch.io</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <h4 class="project-name">Double Endless</h4>
+                        <span class="project-date">February 2022</span>
+                    </div>
+                    <p class="project-detail">2D Runner Game Game made with Unity!</p>
+                    <div class="project-info">
+                        <div class="project-info-row">
+                            <span class="info-label">Technologies:</span>
+                            <span class="info-value">Unity Engine, C#</span>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">Features:</span>
+                            <div class="info-value">
+                                <p>Score System, Enemy System, Projectile System</p>
+                            </div>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">Download:</span>
+                            <span class="info-value"><a href="https://doomzzz.itch.io/double-endless" target="_blank" class="text-link">View on Itch.io</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-header">
+                    <h3>MOBILE APP DEVELOPMENT</h3>
+                </div>
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <h4 class="project-name">Temperature Converter (Android Only)</h4>
+                        <span class="project-date">August 2025</span>
+                    </div>
+                    <p class="project-detail">Convert Between Celicius, Fahrenheit, and Kelvin.</p>
+                    <div class="project-info">
+                        <div class="project-info-row">
+                            <span class="info-label">Technologies:</span>
+                            <span class="info-value">Android Studio, Java</span>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">Features:</span>
+                            <div class="info-value">
+                                <p>Conversion between temprature units</p>
+                            </div>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">View:</span>
+                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Temprature-Converter" target="_blank" class="text-link">View on Github</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <h4 class="project-name">Course-Goals</h4>
+                        <span class="project-date">December 2025</span>
+                    </div>
+                    <p class="project-detail">Keep track of your goals!</p>
+                    <div class="project-info">
+                        <div class="project-info-row">
+                            <span class="info-label">Technologies:</span>
+                            <span class="info-value">React Native, JS, JSX</span>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">Features:</span>
+                            <div class="info-value">
+                                <p>State memory to keep track of tasks</p>
+                            </div>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">View:</span>
+                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Course-Goals-App" target="_blank" class="text-link">View on Github</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <h4 class="project-name">Mini-Guessing Game</h4>
+                        <span class="project-date">December 2025</span>
+                    </div>
+                    <p class="project-detail">Computer Tries to guess your number!</p>
+                    <div class="project-info">
+                        <div class="project-info-row">
+                            <span class="info-label">Technologies:</span>
+                            <span class="info-value">React Native, JS, JSX</span>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">Features:</span>
+                            <div class="info-value">
+                                <p>Random number Generation</p>
+                            </div>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">View:</span>
+                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Mini-Game" target="_blank" class="text-link">View on Github</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-header">
+                    <h3>TERMINAL BASED</h3>
+                </div>
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <h4 class="project-name">To-Do List</h4>
+                        <span class="project-date">August 2025</span>
+                    </div>
+                    <p class="project-detail">Keep track of your tasks. Tasks are stored on a local text file. Made using C++.</p>
+                    <div class="project-info">
+                        <div class="project-info-row">
+                            <span class="info-label">Technologies:</span>
+                            <span class="info-value">C++</span>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">Features:</span>
+                            <div class="info-value">
+                                <p>Adding, Removing, Editing Tasks</p>
+                                <p>Sorting Tasks Accroding to Date</p>
+                            </div>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">View:</span>
+                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/To-Do_List" target="_blank" class="text-link">View on Github</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <h4 class="project-name">Tic-Tac-Toe</h4>
+                        <span class="project-date">August 2025</span>
+                    </div>
+                    <p class="project-detail">Simple XO Game. Made using C++.</p>
+                    <div class="project-info">
+                        <div class="project-info-row">
+                            <span class="info-label">Technologies:</span>
+                            <span class="info-value">C++</span>
+                        </div>
+                        <div class="project-info-row">
+                            <span class="info-label">View:</span>
+                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/TTT" target="_blank" class="text-link">View on Github</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--NewsRoom Section-->
+        <section id="newsroom" class="content-section">
+            <div class="section-header">
+                <h2>NEWSROOM</h2>
+            </div>
+            <div class="news-item">
+                <h3 class="news-item-header">
+                    <div class="date-badge"><i class="fas fa-calendar" style="margin-right: 10px;"></i>4/12/2025</div>
+                    <a target="_blank" href="https://www.qu.edu.qa/en-us/competition/healthhackathon/healthhackathon2025/">Participated at the Qatar Health Tech Hackathon 2025</a>
+                </h3>
+                <div class="news-images">
+                    <img src="../img/healthtech_imgs/Speaking1.jpeg" alt="AIX Hackathon Winner" class="news-image" style="width: 400px;">
+                    <img src="../img/healthtech_imgs/Speaking2.jpeg" alt="AIX Hackathon Winner" class="news-image" >
+                    <img src="../img/healthtech_imgs/best_one_cropped.jpg" alt="AIX Hackathon Winner" class="news-image">
+
+                </div>
+                <div>
+                    The problem we solved? Well, <strong>95% of failed lab tests (like blood tests) fail in the pre-analytical phase. Meaning these tests
+                     fail before the sample enters the lab. Alright, what is the problem here? Well, the cost of these errors and failures is
+                      estimated to be around $450,000 per hospital.</strong> And the main reason behind this problem is Miscommunication and language barrier between the patient and the doctor.
+                    <strong>And our solution? We developed Dalil, your guide for lab test preparation. Dalil provides clear instructions for the patient
+                     on what they should do before their lab test.</strong> Whether they shouldn't eat some meal, whether they shouldn't drink something,
+                      or whether they shouldn't do some exercise as an example. Well, what is different about dalil? Dalil is going to provide
+                       educational visual graphics and multilingual instructions, ensuring that any patient can understand the instructions,
+                        and ensuring we cut down lab test costs and save hospitals thousands.
+                    Although I had high expectations that me and great team would advance to the next stage, we unfortunately didn't.
+                     Nevertheless, this was an amazing opportunity for me to improve my skills.
+                     <br/>
+                    <strong><a target="_blank" href="https://github.com/Ahmed-Elsheshtawy/Dalil">The full project is available on my Github page.</a></strong>
+
+                </div>
+            </div>
+            <div class="news-item">
+                <h3 class="news-item-header">
+                    <div class="date-badge"><i class="fas fa-calendar" style="margin-right: 10px;"></i>6/11/2025</div>
+                    <a target="_blank" href="https://arisio.io/DetailNewsPage/w7QCOsWL-">1st PLACE WINNER OF AIX HACKATHON 2025! ($5000)</a>
+                </h3>
+                <div class="news-images">
+                    <img src="../img/aix_imgs/Ahmed_Photo.jpg" alt="AIX Hackathon Winner" class="news-image">
+                    <img src="../img/aix_imgs/Group_Photo .jpg" alt="AIX Hackathon Winner" class="news-image" >
+                    <img src="../img/aix_imgs/talking_mic.JPG" alt="AIX Hackathon Winner" class="news-image" style="width: 340px;">
+                </div>
+                <div>
+                    Won 1st place with my team Binary Brigades at the AIX Hackathon 2025 organized by risin ventures at QSTP. <br/>
+                    The problem statement was simple, "QDB has a lot of investment opportunities to inspect. QDB has to hire employees with expertise on evaluating investment opportunities. QDB has to wait until investment experts finish their reports on the investments. How can we reduce the cost/money & time spent?". Our Solution? <strong>We developed an AI copilot (using Gemini's 2.5 pro model) that assists QDB in investment opportunities, saving time, effort and money. The analysis produced by the AI model includes useful data, such as Key Weaknesses, Key Strengths, Market Position, Top competitors in the specified market, and much more.</strong>
+                    <br/>
+                    <strong><a target="_blank" href="https://github.com/Ahmed-Elsheshtawy/AIX-Hackathon-Project-Files">The full project is available on my Github page.</a></strong>
+
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="journal" class="content-section">
+            <div class="section-header">
+                <h2>JOURNAL</h2>
+            </div>
+            <p>Journal content coming soon...</p>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="section-header">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-intro">
+                    <p>Have a question or want to work together? Feel free to reach out!</p>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="from_name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="from_email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="from_title" placeholder="Title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
