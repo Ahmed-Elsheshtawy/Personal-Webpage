@@ -58,7 +58,7 @@ const sections = document.querySelectorAll('.content-section');
 // Replace these with your actual EmailJS credentials
 const EMAILJS_PUBLIC_KEY = 'OF8ZlZC_lm_VYzqqu';
 const EMAILJS_SERVICE_ID = 'service_m82qcpx';
-const EMAILJS_TEMPLATE_ID = 'template_xdpbb3h';
+const EMAILJS_TEMPLATE_ID = 'template_e756pg7';
 
 // Initialize EmailJS
 emailjs.init(EMAILJS_PUBLIC_KEY);
@@ -78,6 +78,7 @@ if (contactForm) {
         
         // Get form data
         const formData = {
+            from_title: document.getElementById('title').value,
             from_name: document.getElementById('name').value,
             from_email: document.getElementById('email').value,
             message: document.getElementById('message').value
@@ -123,3 +124,12 @@ if (contactForm) {
             });
     });
 }
+// Disabling right-click context menu
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+// Disabling text selection
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+});
