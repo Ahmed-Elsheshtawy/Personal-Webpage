@@ -6,6 +6,7 @@
     <title>Elsheshtawy</title>
     <link rel="stylesheet" href="styles.css" defer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Fixed Sidebar -->
@@ -356,7 +357,26 @@
             <div class="section-header">
                 <h2>CONTACT</h2>
             </div>
-            <p>Contact content coming soon...</p>
+            <div class="contact-container">
+                <div class="contact-intro">
+                    <p>Have a question or want to work together? Feel free to reach out!</p>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="from_name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="from_email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 

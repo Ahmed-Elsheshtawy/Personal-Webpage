@@ -53,3 +53,73 @@ const sections = document.querySelectorAll('.content-section');
             document.querySelector('.header').style.boxShadow = 'none';
         }
     });
+
+// EmailJS Configuration
+// Replace these with your actual EmailJS credentials
+const EMAILJS_PUBLIC_KEY = 'OF8ZlZC_lm_VYzqqu';
+const EMAILJS_SERVICE_ID = 'service_m82qcpx';
+const EMAILJS_TEMPLATE_ID = 'template_xdpbb3h';
+
+// Initialize EmailJS
+emailjs.init(EMAILJS_PUBLIC_KEY);
+
+// Handle form submission
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const submitBtn = this.querySelector('.submit-btn');
+        const originalText = submitBtn.textContent;
+        
+        // Disable button and show loading state
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        
+        // Get form data
+        const formData = {
+            from_name: document.getElementById('name').value,
+            from_email: document.getElementById('email').value,
+            message: document.getElementById('message').value
+        };
+        
+        console.log('Sending email with data:', formData);
+        
+        // Send the email using EmailJS with template params
+        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formData)
+            .then(
+                function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Show success message
+                    submitBtn.textContent = '✓ Message Sent!';
+                    submitBtn.style.background = 'linear-gradient(135deg, #28a745 0%, #20c997 100%)';
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Reset button after 3 seconds
+                    setTimeout(function() {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = originalText;
+                        submitBtn.style.background = '';
+                    }, 3000);
+                }
+            )
+            .catch(function(error) {
+                console.error('FAILED...', error);
+                console.error('Error details:', JSON.stringify(error));
+                
+                // Show error message
+                submitBtn.textContent = '✗ Failed to Send';
+                submitBtn.style.background = 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)';
+                
+                // Reset button after 3 seconds
+                setTimeout(function() {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.background = '';
+                }, 3000);
+            });
+    });
+}
