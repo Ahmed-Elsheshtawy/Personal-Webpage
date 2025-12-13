@@ -647,20 +647,34 @@ body {
     align-items: flex-start;
 }
 
+.education-item a{
+    color: maroon;
+    text-decoration: underline dotted;
+    transition: all 0.2s ease;
+}
+.education-item a:hover{
+    background-color: rgb(226, 191, 191);
+}
+
 .info-label {
     font-weight: 700;
     color: #000;
     min-width: 140px; /* Fixed width for alignment */
     font-size: 15px;
+    line-height: 1.5;
     font-family: monospace;
 }
 
 .info-value {
     flex: 1;
+    display: inline;
     color: #333;
     font-size: 15px;
-    line-height: 1.8;
+    line-height: 25px;
     font-family: monospace;
+}
+.info-value span {
+    display: block;
 }
 
 .info-value p {
