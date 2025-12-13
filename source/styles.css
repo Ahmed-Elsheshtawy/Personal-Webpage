@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;*/
+    font-family: monospace;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
@@ -25,9 +26,15 @@ body {
     z-index: 100;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
-
+.profile-top-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-bottom: 1px solid #e0e0e0;
+}
 .profile-section {
     text-align: center;
     margin-bottom: 30px;
@@ -35,6 +42,11 @@ body {
 .profile-section a{
     color: maroon;
     text-decoration: none;
+    text-decoration: underline dotted;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.profile-section a:hover{
+    background-color: rgb(226, 191, 191);
 }
 
 .profile-image {
@@ -88,6 +100,8 @@ body {
     gap: 12px;
     margin-bottom: 30px;
     padding: 0 10px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
 }
 
 .social-btn {
@@ -149,7 +163,7 @@ body {
     font-size: 11px;
     color: black;
     text-align: center;
-    margin-top: auto;
+    margin-top: 20px;
     padding: 10px 0;
     background-color: white;
     border: 1px solid #e0e0e0;
@@ -159,6 +173,10 @@ body {
     box-shadow: 0px 2px 6px #646464;
     transition: all 0.3s ease;
     cursor: pointer;
+}
+.break{
+    border: 1px solid #e0e0e0;
+    height: 0.5px;
 }
 .copy-right:hover{
     transform: scale(1.01);
@@ -328,7 +346,6 @@ body {
     margin-bottom: 15px;
 }
 .news-item {
-    width: 100%;
     font-style: italic;
     display: flex;
     flex-direction: column;
@@ -339,7 +356,7 @@ body {
     padding: 30px 40px;
     font-size: 16px;
     line-height: 1.8;
-    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #e6e6e6 0%, #ffffff 100%);
     border: 1px solid #3a3a3a;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -387,26 +404,21 @@ body {
     color: black;
 }
 .news-item a{
-    color: black;
-    text-decoration: underline;
-    background-color: #e7e4bb;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    color: maroon;
+    text-decoration:underline dotted; ;
     display: inline-block;
+    border-radius: 2px;
+    transition: all 0.2s ease;
 }
 .news-item a:hover{
-    color: #434343;
-    transform: scale(1.03);
-    text-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-decoration-thickness: 2px;
+    background-color: rgb(226, 191, 191);
 }
-
 .about-images {
     display: flex;
     flex-direction: column;
     gap: 20px;
     min-width: 300px;
 }
-
 .about-images img {
     width: 100%;
     border-radius: 8px;
@@ -638,7 +650,7 @@ body {
 .info-label {
     font-weight: 700;
     color: #000;
-    min-width: 140px;
+    min-width: 140px; /* Fixed width for alignment */
     font-size: 15px;
     font-family: monospace;
 }
@@ -652,7 +664,7 @@ body {
 }
 
 .info-value p {
-    margin: 5px 0;
+    margin: 5px
 }
 
 /* Responsive adjustments for education section */
