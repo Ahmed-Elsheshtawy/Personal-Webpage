@@ -156,6 +156,7 @@ body {
 }
 .copy-right:hover{
     transform: scale(1.01);
+    border-left: 3px solid black;
 }
 
 /* Fixed Header */
