@@ -218,9 +218,16 @@ body {
 .mobile-menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #000;
     transition: all 0.3s ease;
     border-radius: 2px;
+}
+
+/* Dark mode support for hamburger menu */
+@media (prefers-color-scheme: dark) {
+    .mobile-menu-toggle span {
+        background-color: #fff;
+    }
 }
 
 .mobile-menu-toggle.active span:nth-child(1) {
