@@ -11,7 +11,7 @@ const sidebarHTML = `
             </div>
             
             <div class="blog-author-bio">
-                <h3 class="bio-header">About the Author</h3>
+                <h3 class="bio-header"><i class="fas fa-user-pen"></i>About the Author</h3>
                 <p class="bio-text">
                     Computer Engineering student at Qatar University passionate about AI, 
                     hackathons, and building solutions that matter. When I'm not coding, 
@@ -26,7 +26,7 @@ const sidebarHTML = `
                 <a href="../index.html#blog" class="blog-nav-link">
                     <i class="fas fa-newspaper"></i> All Blog Posts
                 </a>
-                <a href="mailto:ahmedk.elsheshtawy@gmail.com" class="blog-nav-link">
+                <a target="_blank" href="mailto:ahmedk.elsheshtawy@gmail.com" class="blog-nav-link">
                     <i class="fas fa-envelope"></i> Contact Me
                 </a>
             </nav>

@@ -1027,7 +1027,7 @@ body {
 
 .blog-card:hover .blog-card-title {
     text-decoration: underline;
-    text-decoration-color: maroon;
+    text-decoration-color: black;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
 }
