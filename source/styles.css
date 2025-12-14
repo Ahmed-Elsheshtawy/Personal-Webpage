@@ -805,7 +805,11 @@ body {
 
 /* Contact Section */
 .contact-container {
-    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
     margin: 0 auto;
 }
 
