@@ -52,13 +52,14 @@
             <a href="#about" class="nav-link active">ABOUT</a>
             <a href="#newsroom" class="nav-link">NEWSROOM</a>
             <a href="#projects" class="nav-link">PROJECTS</a>
+            <a href="#blog" class="nav-link">BLOG</a>
             <a href="#contact" class="nav-link">CONTACT</a>
         </nav>
     </header>
 
     <!-- Main Content Area (Scrollable) -->
     <main class="main-content">
-        <section id="about" class="content-section active">
+        <section id="about" class="content-section active"> <!-- About section loads first on website opening -->
             <div class="section-header">
                 <h2>ABOUT</h2>
             </div>
@@ -279,12 +280,12 @@
             </div>
             <div class="news-item">
                 <h3 class="news-item-header">
-                    <div class="date-badge"><i class="fas fa-calendar" style="margin-right: 10px;"></i>4/12/2025</div>
+                    <div class="date-badge"><i class="fas fa-calendar" style="margin-right: 10px;"></i>4 December, 2025</div>
                     <a target="_blank" href="https://www.qu.edu.qa/en-us/competition/healthhackathon/healthhackathon2025/">Participated at the Qatar Health Tech Hackathon 2025</a>
                 </h3>
                 <div class="news-images">
-                    <img src="./img/healthtech_imgs/best_one_cropped.jpg" alt="AIX Hackathon Winner" class="news-image" style="width: 340px;">
-                    <img src="./img/healthtech_imgs/Speaking2.jpeg" alt="AIX Hackathon Winner" class="news-image" style="width: 340px;">
+                    <img src="./img/healthtech_imgs/best_one_cropped.jpg" alt="AIX Hackathon Winner" class="news-image" style="width: 260px;">
+                    <img src="./img/healthtech_imgs/Speaking2.jpeg" alt="AIX Hackathon Winner" class="news-image" style="width: 280px;">
                     <img src="./img/healthtech_imgs/Speaking1.jpeg" alt="AIX Hackathon Winner" class="news-image" style="width: 430px;" >
 
                 </div>
@@ -304,7 +305,7 @@
             </div>
             <div class="news-item">
                 <h3 class="news-item-header">
-                    <div class="date-badge"><i class="fas fa-calendar" style="margin-right: 10px;"></i>6/11/2025</div>
+                    <div class="date-badge"><i class="fas fa-calendar" style="margin-right: 10px;"></i>6 November, 2025</div>
                     <a target="_blank" href="https://arisio.io/DetailNewsPage/w7QCOsWL-">1st PLACE WINNER OF AIX HACKATHON 2025! ($5000)</a>
                 </h3>
                 <div class="news-images">
@@ -324,11 +325,77 @@
             
         </section>
 
-        <section id="journal" class="content-section">
+        <section id="blog" class="content-section">
             <div class="section-header">
-                <h2>JOURNAL</h2>
+                <h2>BLOG</h2>
             </div>
-            <p>Journal content coming soon...</p>
+            
+            <div class="blog-container">
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <!-- Replace with your image path -->
+                        <img src="./blog/img/nimah/nimah_logo.png" alt="Blog post featured image">
+                        <span class="blog-new-badge">NEW</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div>
+                            <div class="blog-card-date">
+                                <i class="fas fa-calendar"></i>
+                                14 December, 2025
+                                <span class="blog-read-time"><i class="fas fa-clock"></i>5 min read</span>
+                            </div>
+                            <h3 class="blog-card-title">How is it going with Ni'mah?</h3>
+                            <p class="blog-card-excerpt">
+                                A quick reflection on my experience with Ni'mah so far. The good, the bad, and the exciting future ahead!
+                            </p>
+                        </div>
+                        <div class="blog-card-footer">
+                            <div class="blog-card-tags">
+                                <span class="blog-tag">Entrepreneurship </span>
+                                <span class="blog-tag">Startup </span>
+                            </div>
+                            <a href="./blog/nimah_blog_post.html" class="blog-card-readmore">
+                                Read more <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TEMPLATE: Copy this structure to add more blog cards -->
+                <!--
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="YOUR_IMAGE_PATH_HERE" alt="Descriptive alt text">
+                        <span class="blog-new-badge">NEW</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div>
+                            <div class="blog-card-date">
+                                <i class="fas fa-calendar"></i>
+                                Month Day, Year
+                                <span class="blog-read-time"><i class="fas fa-clock"></i>X min read</span>
+                            </div>
+                            <h3 class="blog-card-title">Your Blog Post Title Here</h3>
+                            <p class="blog-card-excerpt">
+                                Your blog post excerpt/description here. This should be a brief summary 
+                                that gives readers an idea of what the post is about. Keep it concise 
+                                and engaging to encourage clicks.
+                            </p>
+                        </div>
+                        <div class="blog-card-footer">
+                            <div class="blog-card-tags">
+                                <span class="blog-tag">Tag1</span>
+                                <span class="blog-tag">Tag2</span>
+                                <span class="blog-tag">Tag3</span>
+                            </div>
+                            <a href="#" class="blog-card-readmore">
+                                Read more <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                -->
+            </div>
         </section>
 
         <section id="contact" class="content-section">

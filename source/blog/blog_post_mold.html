@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Elsheshtawy</title>
+    <link rel="stylesheet" href="../styles.css" defer>
+    <link rel="stylesheet" href="blog-post.css" defer>
+    <link rel="icon" type="image/png" href="../img/github_pfp.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="sidebar-template.js"></script>
+    <script src="blog-script.js" defer></script>
+    <style>
+        /* Override main-content margin for blog post page without header */
+        .main-content {
+            margin-top: 0;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Container - Populated by sidebar-template.js -->
+    <div id="sidebar-container"></div> <!-- Injecting the side bar -->
+
+    <!-- Main Blog Post Content -->
+    <main class="main-content">
+        <div class="blog-nav">
+            <a href="../index.html#blog" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Blogs
+            </a>
+        </div>
+        <article class="blog-post">
+
+            <!-- Blog Post Header -->
+            <header class="blog-post-header">
+                <!-- Featured Image -->
+                <div class="blog-post-featured-image">
+                    <img src="../img/blog-placeholder-1.jpg" alt="Blog post featured image">
+                </div>
+
+                <!-- Post Meta Information -->
+                <div class="blog-post-meta">
+                    <div class="meta-left">
+                        <span class="meta-date">
+                            <i class="fas fa-calendar"></i> December 13, 2025
+                        </span>
+                        <span class="meta-read-time">
+                            <i class="fas fa-clock"></i> 5 min read
+                        </span>
+                        <span class="meta-author">
+                            <i class="fas fa-user"></i> Ahmed Elsheshtawy
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Post Title -->
+                <h1 class="blog-post-title">Your Blog Post Title Goes Here</h1>
+
+                <!-- Technology Tags -->
+                <div class="blog-post-tags">
+                    <span class="post-tag">Unity</span>
+                    <span class="post-tag">C#</span>
+                    <span class="post-tag">Game Development</span>
+                </div>
+
+                <!-- Excerpt/Subtitle -->
+                <p class="blog-post-subtitle">
+                    A brief, engaging subtitle or introduction that summarizes what this blog post is about 
+                    and hooks the reader to continue reading the full article.
+                </p>
+            </header>
+
+            <!-- Blog Post Content -->
+            <div class="blog-post-content">
+                <!-- Section 1 -->
+                <section class="content-section">
+                    <h2>Introduction</h2>
+                    <p>
+                        This is where you start your blog post. You can write your introduction here, 
+                        explaining what the post is about and what readers will learn. Keep it engaging 
+                        and clear. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <p>
+                        You can add multiple paragraphs to build your narrative. Each paragraph should 
+                        focus on a specific idea or point. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </section>
+
+                <!-- Section 2 -->
+                <section class="content-section">
+                    <h2>Main Topic or Section Heading</h2>
+                    <p>
+                        Here you can dive deeper into your main topic. Break down complex ideas into 
+                        digestible sections with clear headings. This helps readers scan and find the 
+                        information they're looking for.
+                    </p>
+                    
+                    <!-- Image in Content -->
+                    <div class="content-image">
+                        <img src="../img/blog-placeholder-2.jpg" alt="Descriptive alt text">
+                        <p class="image-caption">Figure 1: Add a descriptive caption for your images</p>
+                    </div>
+
+                    <p>
+                        Continue your explanation after the image. Visual elements help break up text 
+                        and make your content more engaging. Duis aute irure dolor in reprehenderit in 
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </section>
+
+                <!-- Section 3 - With List -->
+                <section class="content-section">
+                    <h2>Key Points or Steps</h2>
+                    <p>Use lists when you want to present information in an organized way:</p>
+                    
+                    <h3>Ordered List Example</h3>
+                    <ol class="content-list">
+                        <li>First step or point - explain in detail what this means</li>
+                        <li>Second step or point - provide context and examples</li>
+                        <li>Third step or point - make it actionable</li>
+                        <li>Fourth step or point - add any relevant tips</li>
+                    </ol>
+
+                    <h3>Unordered List Example</h3>
+                    <ul class="content-list">
+                        <li><strong>Important feature:</strong> Describe the feature and its benefits</li>
+                        <li><strong>Another key aspect:</strong> Explain why this matters</li>
+                        <li><strong>Final consideration:</strong> Wrap up with additional insights</li>
+                    </ul>
+                </section>
+
+                <!-- Section 4 - Code Block Example -->
+                <section class="content-section">
+                    <h2>Code Examples (Optional)</h2>
+                    <p>If you're writing technical content, you can include code snippets:</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">C#</span>
+                            <button class="copy-code-btn" onclick="copyCode(this)">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                    </div>
+                        <pre>
+                            <code>
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour 
+{
+    public float speed = 5f;
+    
+    void Update() 
+    {
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        
+        Vector3 movement = new Vector3(horizontal, 0, vertical);
+        transform.Translate(movement * speed * Time.deltaTime);
+    }
+}
+                            </code>
+                        </pre>
+                    </div>
+
+                    <p>
+                        Explain what the code does and why it's important. Walk through key lines if 
+                        necessary to help readers understand the implementation.
+                    </p>
+                </section>
+
+                <!-- Section 5 - Blockquote Example -->
+                <section class="content-section">
+                    <h2>Important Insights</h2>
+                    <p>You can emphasize important points using blockquotes:</p>
+                    
+                    <blockquote class="content-quote">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>
+                            This is an important quote or insight that you want to highlight. 
+                            It could be something you learned, advice you want to give, or a key 
+                            takeaway from your experience.
+                        </p>
+                    </blockquote>
+
+                    <p>
+                        Continue your explanation after the quote, building on the insight you've shared.
+                    </p>
+                </section>
+
+                <!-- Section 6 - Tips/Warning Box -->
+                <section class="content-section">
+                    <h2>Tips and Warnings</h2>
+                    
+                    <div class="info-box tip-box">
+                        <div class="info-box-header">
+                            <i class="fas fa-lightbulb"></i>
+                            <strong>Pro Tip</strong>
+                        </div>
+                        <p>
+                            Share helpful tips or best practices that you've learned. These stand out 
+                            visually and provide additional value to your readers.
+                        </p>
+                    </div>
+
+                    <div class="info-box warning-box">
+                        <div class="info-box-header">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <strong>Important Note</strong>
+                        </div>
+                        <p>
+                            Warn readers about common pitfalls or important considerations they should 
+                            be aware of before proceeding.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Conclusion -->
+                <section class="content-section">
+                    <h2>Conclusion</h2>
+                    <p>
+                        Wrap up your blog post with a strong conclusion. Summarize the key points you've 
+                        covered and provide final thoughts or next steps for readers. Encourage engagement 
+                        by inviting them to share their experiences or ask questions.
+                    </p>
+                    <p>
+                        Thank your readers for their time and invite them to check out related content 
+                        or connect with you on social media.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Post Footer -->
+            <footer class="blog-post-footer">
+                <!-- Share Section -->
+                <div class="post-share">
+                    <h3>Share this post</h3>
+                    <div class="share-buttons">
+                        <a href="#" class="share-btn" onclick="copyLink()" title="Copy link">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </main>
+
+</body>
+</html>
