@@ -13,9 +13,8 @@ const sidebarHTML = `
             <div class="blog-author-bio">
                 <h3 class="bio-header"><i class="fas fa-user-pen"></i>About the Author</h3>
                 <p class="bio-text">
-                    Computer Engineering student at Qatar University passionate about AI, 
-                    hackathons, and building solutions that matter. When I'm not coding, 
-                    I'm probably working on my next startup idea or exploring new technologies.
+                    Computer Engineering student at Qatar University that is passionate about tech, research, and entrepreneurship.</strong>
+                    I love building projects that solve real-world problems and make a positive impact.
                 </p>
             </div>
 
