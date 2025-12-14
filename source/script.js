@@ -2,6 +2,37 @@
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('.content-section');
 
+// Mobile menu toggle functionality
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+    
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768 && 
+            !mobileMenuToggle.contains(e.target) && 
+            !navMenu.contains(e.target)) {
+            mobileMenuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+}
+
 // Helper function to activate a section (removes redundancy)
 function activateSection(sectionId, updateHistory = false) {
     const targetSection = document.getElementById(sectionId);

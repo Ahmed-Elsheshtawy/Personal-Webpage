@@ -10,6 +10,11 @@ body {
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
+    /* Prevent text size adjustment on mobile */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /* Improve touch scrolling on mobile */
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Fixed Sidebar */
@@ -196,6 +201,38 @@ body {
     display: flex;
     align-items: center;
     padding: 0 80px;
+}
+
+/* Mobile Menu Toggle Button - Hidden by default */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 101;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .nav-menu {
@@ -495,38 +532,262 @@ body {
     }
 }
 
+/* Tablet & Mobile Responsive Styles */
 @media (max-width: 768px) {
+    /* Sidebar becomes header on mobile */
     .sidebar {
         width: 100%;
         height: auto;
         position: relative;
         border-right: none;
         border-bottom: 1px solid #e0e0e0;
+        padding: 20px 15px;
     }
     
+    /* Profile section adjustments */
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 15px;
+    }
+    
+    .name {
+        font-size: 22px;
+    }
+    
+    .institution {
+        font-size: 11px;
+    }
+    
+    /* Social links in mobile */
+    .social-links {
+        gap: 10px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    .social-btn {
+        padding: 12px 15px;
+        font-size: 12px;
+        gap: 10px;
+        /* Ensure touch targets are at least 44x44px for accessibility */
+        min-height: 44px;
+    }
+    
+    .social-btn i {
+        font-size: 14px;
+    }
+    
+    /* Header navigation */
     .header {
         left: 0;
         top: auto;
         position: relative;
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
-    .main-content {
-        margin-left: 0;
-        margin-top: 0;
-        padding: 30px 20px;
+    /* Show mobile menu toggle */
+    .mobile-menu-toggle {
+        display: flex;
+        align-self: flex-end;
+        position: absolute;
+        top: 15px;
+        right: 15px;
     }
     
     .nav-menu {
-        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        margin-top: 50px;
     }
     
+    .nav-menu.active {
+        max-height: 500px;
+    }
+    
+    /* Improve touch targets for navigation */
     .nav-link {
-        padding: 12px 15px;
-        font-size: 11px;
+        width: 100%;
+        text-align: center;
+        padding: 12px 16px;
+        font-size: 12px;
+        margin-right: 0;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Main content adjustments */
+    .main-content {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 25px 15px;
+    }
+    
+    .section-header h2 {
+        font-size: 20px;
+    }
+    
+    /* About section */
+    .about-text {
+        font-size: 14px;
+        line-height: 1.7;
     }
     
     .about-images {
         flex-direction: column;
+    }
+    
+    /* Education section */
+    .education-item {
+        padding: 15px;
+    }
+    
+    .education-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .education-institution {
+        font-size: 16px;
+    }
+    
+    .education-logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .education-date {
+        font-size: 11px;
+    }
+    
+    .education-detail {
+        font-size: 13px;
+    }
+    
+    /* Projects section */
+    .project-item {
+        padding: 15px;
+    }
+    
+    .project-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .project-name {
+        font-size: 16px;
+    }
+    
+    .project-date {
+        font-size: 11px;
+    }
+    
+    .project-detail {
+        font-size: 13px;
+    }
+    
+    .project-info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    /* Newsroom section */
+    .news-item {
+        padding: 15px;
+    }
+    
+    .news-item-header {
+        font-size: 16px;
+    }
+    
+    .date-badge {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+    
+    .news-images {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .news-image {
+        width: 100% !important;
+        height: auto;
+    }
+    
+    /* Copyright */
+    .copy-right {
+        font-size: 10px;
+        padding: 8px 5px;
+    }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+    /* Further reduce sizes for very small screens */
+    .sidebar {
+        padding: 15px 10px;
+    }
+    
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .name {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+    }
+    
+    .institution {
+        font-size: 10px;
+    }
+    
+    .social-btn {
+        padding: 10px 12px;
+        font-size: 11px;
+    }
+    
+    .header {
+        padding: 10px;
+    }
+    
+    .nav-link {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+    
+    .main-content {
+        padding: 20px 10px;
+    }
+    
+    .section-header h2 {
+        font-size: 18px;
+    }
+    
+    .about-text {
+        font-size: 13px;
+    }
+    
+    .education-institution,
+    .project-name {
+        font-size: 14px;
+    }
+    
+    .news-item-header {
+        font-size: 14px;
     }
 }
 
@@ -1045,6 +1306,7 @@ body {
     font-family: monospace;
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1199,6 +1461,7 @@ body {
     .blog-card-excerpt {
         font-size: 0.9rem;
         -webkit-line-clamp: 2;
+        line-clamp: 2;
     }
 
     .blog-tag {
