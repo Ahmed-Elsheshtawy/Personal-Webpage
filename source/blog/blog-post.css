@@ -817,6 +817,12 @@
     color: #ffffff;
 }
 
+.blog-post strong{
+    font-weight: bold;
+    background-color: #e7e4bb;
+    color: black;
+}
+
 /* Responsive Adjustments for Blog Sidebar */
 @media (max-width: 768px) {
     .blog-author-image {
