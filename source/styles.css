@@ -1593,3 +1593,10 @@ body {
     color: #555;
     line-height: 1.8;
 }
+.research-intro strong{
+    font-weight: 700;
+    background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+    color: #000;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
