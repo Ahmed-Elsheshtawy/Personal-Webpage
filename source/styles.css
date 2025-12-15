@@ -324,14 +324,10 @@ body {
 }
 
 .about-text {
-    flex: 1;
-}
-
-.about-text {
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 1.9;
-    text-align: justify;
+    text-align: left;
     color: #2c2c2c;
     font-weight: 400;
     letter-spacing: 0.2px;
@@ -350,8 +346,7 @@ body {
 .about-text strong {
     font-weight: bold;
     color: #000;
-    font-size: 18px;
-    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
 }
 
 .text-link {
@@ -545,12 +540,17 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
 }
+.menu-text{
+    display:none;
+}
 
 .news-content {
     color: #333;
     line-height: 1.6;
 }
-
+.nav-icon{
+    margin-right: 2px;
+}
 /* Responsive Design */
 @media (max-width: 1200px) {
     .about-content {
@@ -623,15 +623,19 @@ body {
     /* Show mobile menu toggle */
     .mobile-menu-toggle {
         display: flex;
-        align-self: flex-start;
-        position: absolute;
-        top: 15px;
-        left: 15px;
     }
     
+    .menu-text{
+        display: inline;
+        font-size: 24px;
+        font-weight: 700;
+        margin-left: 10px;
+        color: #964545;
+    }
     .nav-menu {
         width: 100%;
         flex-direction: column;
+        align-items: center;
         gap: 8px;
         max-height: 0;
         overflow: hidden;
@@ -645,11 +649,10 @@ body {
     
     /* Improve touch targets for navigation */
     .nav-link {
-        width: 100%;
+        width: 90%;
         text-align: center;
-        padding: 12px 16px;
         font-size: 12px;
-        margin-right: 0;
+        margin-bottom: 5px;
         min-height: 44px;
         display: flex;
         align-items: center;
@@ -668,10 +671,6 @@ body {
     }
     
     /* About section */
-    .about-text {
-        font-size: 14px;
-        line-height: 1.7;
-    }
     
     .about-images {
         flex-direction: column;
@@ -707,10 +706,6 @@ body {
     
     .education-category-card {
         padding: 0;
-    }
-    
-    .education-item {
-        margin: 20px;
     }
     
     /* Projects section */
@@ -833,10 +828,6 @@ body {
     
     .section-header h2 {
         font-size: 18px;
-    }
-    
-    .about-text {
-        font-size: 13px;
     }
     
     .education-institution,

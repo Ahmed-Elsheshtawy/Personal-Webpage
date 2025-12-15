@@ -48,18 +48,21 @@
 
     <!-- Fixed Header Navigation -->
     <header class="header">
-        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <div style="display: flex; align-items: center; gap: 10px; @media(max-width: 768px) { justify-content: space-between; width: 100%; }">
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        <span class="menu-text">MENU</span>
+        </div>
         <nav class="nav-menu">
-            <a href="#about" class="nav-link active">ABOUT</a>
-            <a href="#newsroom" class="nav-link">NEWSROOM</a>
-            <a href="#projects" class="nav-link">PROJECTS</a>
-            <a href="#blog" class="nav-link">BLOG</a>
-            <a href="#research" class="nav-link">RESEARCH</a>
-            <a href="#contact" class="nav-link">CONTACT</a>
+            <a href="#about" class="nav-link active"><i class="fas fa-user nav-icon"></i> ABOUT</a>
+            <a href="#newsroom" class="nav-link"><i class="fas fa-newspaper nav-icon"></i> NEWSROOM</a>
+            <a href="#projects" class="nav-link"><i class="fas fa-code nav-icon"></i> PROJECTS</a>
+            <a href="#blog" class="nav-link"><i class="fas fa-blog nav-icon"></i> BLOG</a>
+            <a href="#research" class="nav-link"><i class="fas fa-atom nav-icon"></i> RESEARCH</a>
+            <a href="#contact" class="nav-link"><i class="fas fa-envelope nav-icon"></i> CONTACT</a>
         </nav>
     </header>
 
