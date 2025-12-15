@@ -200,7 +200,7 @@
 
 .blog-post-content p {
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: left;
 }
 
 .blog-post-content strong {
