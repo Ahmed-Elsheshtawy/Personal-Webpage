@@ -57,7 +57,7 @@ function activateSection(sectionId, updateHistory = false) {
         } else {
             // Mobile/Phone: Use scrollIntoView
             window.scrollTo({
-                top: 750, // scroll to just below the fixed header
+                top: 720, // scroll to just below the fixed header
                 behavior: 'smooth'
             });
         }
