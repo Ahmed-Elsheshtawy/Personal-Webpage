@@ -47,11 +47,11 @@ function activateSection(sectionId, updateHistory = false) {
         targetLink.classList.add('active');
         targetSection.classList.add('active');
         
-        targetSection.scrollIntoView(
-            { 
-                behavior: 'smooth',
-                block: 'start'
-            });
+        // Control the window's scroll bar directly
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
 
         // Update URL if needed (for click events, not for page load)
         if (updateHistory) {
