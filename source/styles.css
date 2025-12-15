@@ -1078,6 +1078,33 @@ body {
     cursor: pointer;
 }
 
+.project-images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: #f8f8f8;
+    width: 100%;
+}
+.project-image{
+    width: 280px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+}
+.project-image:hover{
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    border-color: #000;
+}
+
 .project-item:last-child {
     margin-bottom: 30px;
 }
