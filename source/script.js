@@ -48,10 +48,19 @@ function activateSection(sectionId, updateHistory = false) {
         targetSection.classList.add('active');
         
         // Control the window's scroll bar directly
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+        if (window.innerWidth > 768) {
+            // Desktop/Laptop: Use precise scroll control
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            // Mobile/Phone: Use scrollIntoView
+            window.scrollTo({
+                top: 750, // scroll to just below the fixed header
+                behavior: 'smooth'
+            });
+        }
 
         // Update URL if needed (for click events, not for page load)
         if (updateHistory) {

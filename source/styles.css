@@ -279,6 +279,7 @@ body {
 .content-section {
     display: none;
     animation: fadeIn 0.5s ease;
+    scroll-margin-top: 600px;
 }
 
 .content-section.active {
