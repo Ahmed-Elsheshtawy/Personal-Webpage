@@ -1,3 +1,9 @@
+.profile-top-section{
+    border-bottom: 0px;
+
+}
+
+
 /* ================================================
    BLOG POST SPECIFIC STYLES
    ================================================ */
@@ -7,7 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 70%;
+    max-width: 90%;
     margin: 0 auto;
     background-color: #ffffff;
     padding: 40px;
@@ -15,12 +21,6 @@
     border: 2px solid #e0e0e0;
     border-left: 4px solid #333;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-/* Back Navigation Button */
-.blog-nav {
-    margin: 0 auto;
-    width: fit-content;
 }
 
 .back-button {
@@ -544,6 +544,9 @@
 @media (max-width: 768px) {
     .blog-post {
         padding: 25px 20px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
     }
 
     .blog-post-featured-image {
@@ -604,12 +607,12 @@
 
 /* Author Image Styling */
 .blog-author-image {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto 20px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #333;
+    border: 3px solid #ccc;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -623,7 +626,7 @@
 }
 
 .blog-author-image:hover {
-    transform: scale(1.08) rotate(-3deg);
+    transform: scale(1.03) rotate(3deg);
     border-color: #000;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
@@ -688,7 +691,6 @@
     align-items: stretch;
     gap: 10px;
     margin: 25px 0;
-
 }
 
 .blog-nav-link {
@@ -705,8 +707,7 @@
     font-weight: 600;
     font-family: monospace;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
+    width: 100%;
 }
 
 .blog-nav-link::before {
@@ -746,10 +747,8 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin: 25px 0;
     padding: 20px 0;
     border-top: 2px solid #e0e0e0;
-    border-bottom: 2px solid #e0e0e0;
 }
 
 .blog-social-icon {

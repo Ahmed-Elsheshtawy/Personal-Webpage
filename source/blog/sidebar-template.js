@@ -7,7 +7,7 @@ const sidebarHTML = `
                     <img src="../img/personal_photo_Expanded.jpeg" alt="Ahmed Elsheshtawy">
                 </div>
                 <h1 class="name">Ahmed's Blog</h1>
-                <p class="blog-tagline">Thoughts on Tech, Entrepreneurship & Innovation</p>
+                <p class="blog-tagline">Thoughts on Tech, Entrepreneurship & Research</p>
             </div>
             
             <div class="blog-author-bio">
@@ -42,12 +42,13 @@ const sidebarHTML = `
                 </a>
             </div>
         </div>
-        <div>
-            <div class="copy-right">
-                &copy; 2025 Ahmed Khedr Elsheshtawy. All rights reserved.
-            </div>
-        </div>
     </aside>
+`;
+
+const copyRightHTML= `
+    <div class="copy-right">
+        &copy; 2025 Ahmed Khedr Elsheshtawy. All rights reserved.
+    </div>
 `;
 
 // Inject sidebar into the page
@@ -55,5 +56,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const sidebarContainer = document.getElementById('sidebar-container');
     if (sidebarContainer) {
         sidebarContainer.innerHTML = sidebarHTML;
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const copyRightElement = document.querySelector('#copy-right');
+    if (copyRightElement) {
+        copyRightElement.innerHTML = copyRightHTML;
     }
 });

@@ -75,7 +75,7 @@ body {
     border: 0px white solid;
 }
 .profile-image:hover {
-    transform: scale(1.05) rotate(3deg);
+    transform: scale(1.03) rotate(3deg);
     border-color: rgba(0, 0, 0, 1);
 }
 .name {
@@ -172,7 +172,7 @@ body {
     color: black;
     text-align: center;
     margin-top: 20px;
-    padding: 10px 0;
+    padding: 10px 10px;
     background-color: white;
     border: 1px solid #e0e0e0;
     background-color: #f0f0f0;
