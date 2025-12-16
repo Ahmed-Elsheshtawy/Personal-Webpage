@@ -53,9 +53,6 @@ body {
     text-decoration: underline dotted;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.profile-section a:hover{
-    background-color: rgb(226, 191, 191);
-}
 
 .profile-image {
     width: 150px;
@@ -362,11 +359,6 @@ body {
     text-decoration: none;
 }
 
-.text-link:hover {
-    background-color: rgb(226, 191, 191);
-    padding-bottom: 3px;
-}
-
 .section-divider {
     margin: 40px 0;
     border: none;
@@ -468,9 +460,6 @@ body {
     border-radius: 2px;
     transition: all 0.2s ease;
     text-decoration: underline dotted;
-}
-.news-item .news-project-link:hover{
-    background-color: rgb(226, 191, 191);
 }
 .news-item .news-title{
     font-size: 20px;
@@ -977,9 +966,6 @@ body {
     text-decoration: underline dotted;
     transition: all 0.2s ease;
 }
-.education-item a:hover{
-    background-color: rgb(226, 191, 191);
-}
 
 .info-label {
     font-weight: 700;
@@ -1381,7 +1367,6 @@ body {
 }
 
 .blog-card-readmore:hover {
-    background-color: rgb(226, 191, 191);
     gap: 10px;
 }
 
