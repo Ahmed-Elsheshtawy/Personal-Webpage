@@ -1231,14 +1231,22 @@ body {
 }
 
 .project-date {
-    font-size: 14px;
-    color: #666;
-    font-style: italic;
-    font-weight: 500;
-    padding: 6px 15px;
-    background-color: #f5f5f5;
+    padding: 8px 16px;
+    background: rgba(0, 0, 0, 0.05);
+    color: #333333;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
     border-radius: 20px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.project-date:hover {
+    background: rgba(0, 0, 0, 0.08);
+    transform: scale(1.05);
 }
 
 .project-detail {
