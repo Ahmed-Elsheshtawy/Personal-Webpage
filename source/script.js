@@ -105,3 +105,41 @@ document.addEventListener('selectstart', function(e) {
 document.addEventListener('dragstart', function(e) {
     e.preventDefault();
 });
+
+// Project Filter Functionality
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCategories = document.querySelectorAll('.project-category-card');
+
+// Ensure all categories are visible on page load
+projectCategories.forEach(cat => {
+    cat.classList.remove('hidden');
+    cat.style.display = 'block';
+});
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const filterValue = this.getAttribute('data-filter');
+        
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Filter projects
+        projectCategories.forEach(category => {
+            const categoryValue = category.getAttribute('data-category');
+            
+            if (filterValue === 'all') {
+                category.classList.remove('hidden');
+                category.style.display = 'block';
+            } else {
+                if (categoryValue === filterValue) {
+                    category.classList.remove('hidden');
+                    category.style.display = 'block';
+                } else {
+                    category.classList.add('hidden');
+                    category.style.display = 'none';
+                }
+            }
+        });
+    });
+});

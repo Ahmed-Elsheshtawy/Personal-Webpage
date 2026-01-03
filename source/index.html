@@ -116,9 +116,104 @@
                 <h2>PROJECTS</h2>
             </div>
 
+            <!-- Project Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="unity">Unity Games</button>
+                <button class="filter-btn" data-filter="terminal">Terminal Based</button>
+            </div>
+
             <div class="projects-section">
+                <!-- WEB DEVELOPMENT Category Card -->
+                <div class="project-category-card" data-category="web">
+                    <div class="projects-header">
+                        <h3>WEB DEVELOPMENT</h3>
+                    </div>
+                    <div class="project-item featured-project">
+                        <span class="featured-badge"><i class="fas fa-star"></i> Featured Project</span>
+                        <div class="project-title-row">
+                            <h4 class="project-name">Humanitarian AI Dashboard</h4>
+                            <span class="project-date">December 2025</span>
+                        </div>
+                        <div class="project-images">
+                            <img src="./img/projects/humanitarian-ai-dashboard/case-studies.png" alt="Case Studies Section" class="project-image">
+                            <img src="./img/projects/humanitarian-ai-dashboard/ethics.png" alt="Ethics Section" class="project-image">
+                            <img src="./img/projects/humanitarian-ai-dashboard/contact.png" alt="Contact Section" class="project-image">
+                            <img src="./img/projects/humanitarian-ai-dashboard/Resources.png" alt="Resources Section" class="project-image">
+                            <img src="./img/projects/humanitarian-ai-dashboard/data-analytics.png" alt="Data & Analytics" class="project-image">
+                            <img src="./img/projects/humanitarian-ai-dashboard/home-page.png" alt="Home Page" class="project-image">
+                            <img src="./img/projects/humanitarian-ai-dashboard/home-page2.png" alt="Home Page 2" class="project-image">
+                            <img src="./img/projects/humanitarian-ai-dashboard/qatar.png" alt="Qatar Section" class="project-image">
+                            <img src="./img/projects/humanitarian-ai-dashboard/musaaed.png" alt="Musaaed (AI Chatbot)" class="project-image">
+                        </div>
+                        <p class="project-detail"><strong>I developed a full-stack dashboard that was part of a collaboration between Qatar Univeristy and the British Embassy in Qatar.</strong> The dashboard features aggregation of many Ethical AI Policies, Case Studies, and Resources. In addition, it includes Data & Analytics of important trends regarding the growth of Humanitarian AI in the MENA region. There is also Musaaed, your personal AI Assistant that will help you overall with your expercience. The website also features AI scraping and an Admin Page to manage pending content.</p>
+                        <div class="project-info">
+                            <div class="project-info-row">
+                                <span class="info-label">Technologies:</span>
+                                <span class="info-value">HTML, CSS, JavaScript, Node JS</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">APIs:</span>
+                                <span class="info-value">Gemini API, Google Spreadsheet API, Leaflet, Chart JS</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">View:</span>
+                                <span class="info-value"><a href="https://ai-humanitarian-use-dashboard.vercel.app/" target="_blank" class="text-link">View Website</a></span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">Documentation:</span>
+                                <span class="info-value"><a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:45f766ce-cc3d-43dc-865a-305ae20ed037" target="_blank" class="text-link">View Documentation (Out Dated)</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-title-row">
+                            <h4 class="project-name">Tic-Tac-Toe</h4>
+                            <span class="project-date">December 2025</span>
+                        </div>
+                        <div class="project-images">
+                            <img src="./img/projects/XO_web/idle.png" alt="Tic-Tac-Toe web game idle state" class="project-image">
+                            <img src="./img/projects/XO_web/Winning.png" alt="Tic-Tac-Toe winning screen" class="project-image">
+                        </div>
+                        <p class="project-detail">Simple XO Game.</p>
+                        <div class="project-info">
+                            <div class="project-info-row">
+                                <span class="info-label">Technologies:</span>
+                                <span class="info-value">HTML, CSS, JavaScript</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">View:</span>
+                                <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/TTT-Web" target="_blank" class="text-link">View on Github</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-title-row">
+                            <h4 class="project-name">Do!</h4>
+                            <span class="project-date">December 2025</span>
+                        </div>
+                        <div class="project-images">
+                            <img src="./img/projects/do/page.png" alt="Do! To-Do List interface" class="project-image" style="width: 500px;">
+                        </div>
+                        <p class="project-detail">A simple To-Do List. (It still needs some improvements as it is not fully finished)</p>
+                        <div class="project-info">
+                            <div class="project-info-row">
+                                <span class="info-label">Technologies:</span>
+                                <span class="info-value">HTML, CSS, JavaScript</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">View:</span>
+                                <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Do-" target="_blank" class="text-link">View on Github</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End WEB DEVELOPMENT Card -->
+
                 <!-- UNITY Category Card -->
-                <div class="project-category-card">
+                <div class="project-category-card" data-category="unity">
                     <div class="projects-header">
                         <h3>UNITY ENGINE</h3>
                     </div>
@@ -181,207 +276,202 @@
                 <!-- End UNITY Card -->
 
                 <!-- MOBILE APP DEVELOPMENT Category Card -->
-                <div class="project-category-card">
+                <div class="project-category-card" data-category="mobile">
                     <div class="projects-header">
                         <h3>MOBILE APP DEVELOPMENT</h3>
                     </div>
+                    <div class="project-item featured-project">
+                        <span class="featured-badge"><i class="fas fa-star"></i> Featured Project</span>
+                        <div class="project-title-row">
+                            <h4 class="project-name">Ni'ma</h4>
+                            <span class="project-date">January 2026</span>
+                        </div>
+                        <div class="project-images">
+                            <img src="./img/projects/nima/order-confirmation.jpeg" alt="" class="project-image">
+                            <img src="./img/projects/nima/restaurant-screen.jpeg" alt="" class="project-image">
+                            <img src="./img/projects/nima/orders-screen.jpeg" alt="" class="project-image">
+                            <img src="./img/projects/nima/dashboard.png" alt="" class="project-image">
+                            <img src="./img/projects/nima/pending-orders.png" alt="" class="project-image">
+                            <img src="./img/projects/nima/active-deals.png" alt="" class="project-image">
+                        </div>
+                        <p class="project-detail">Ni'ma is our Start-up Idea. <strong>I developed a mobile application and Restaurant Dashboard for Ni'ma.</strong> The mobile app shows nearby restaurants using GeoJSON calculations and their surplus deals. For now, you can order Cash Only. The restaurant Dashboard provides all capabilities in order to connect with the customers.</p>
+                        <div class="project-info">
+                            <div class="project-info-row">
+                                <span class="info-label">Frontend:</span>
+                                <span class="info-value">React Native, HTML, CSS, JavaScript</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">Backend:</span>
+                                <span class="info-value">Node JS, JWT, Bcrypt, Async Storage</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">DataBase:</span>
+                                <span class="info-value">MongoDB</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">Tools & APIs:</span>
+                                <span class="info-value">Postman, GeoJSON, Google Maps</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">Features:</span>
+                                <div class="info-value">
+                                    <p>Order Deals, Rate Restaurants, Personal Profile, Restaurant Dashboard, Restaurant Management System</p>
+                                </div>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">View:</span>
+                                <span class="info-value"><a href="https://acrobat.adobe.com/id/urn:aaid:sc:ap:1e887fd6-1255-4450-8ec2-403b74c34fa2" target="_blank" class="text-link">View Documentation</a></span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="project-item">
-                    <div class="project-title-row">
-                        <h4 class="project-name">Temperature Converter (Android Only)</h4>
-                        <span class="project-date">August 2025</span>
-                    </div>
-                    <div class="project-images">
-                        <img src="./img/projects/Temp_Converter/temp_converter_1.jpg" alt="Temperature Converter app interface" class="project-image">
-                    </div>
-                    <p class="project-detail">Convert Between Celicius, Fahrenheit, and Kelvin.</p>
-                    <div class="project-info">
-                        <div class="project-info-row">
-                            <span class="info-label">Technologies:</span>
-                            <span class="info-value">Android Studio, Java</span>
+                        <div class="project-title-row">
+                            <h4 class="project-name">Temperature Converter (Android Only)</h4>
+                            <span class="project-date">August 2025</span>
                         </div>
-                        <div class="project-info-row">
-                            <span class="info-label">Features:</span>
-                            <div class="info-value">
-                                <p>Conversion between temprature units</p>
+                        <div class="project-images">
+                            <img src="./img/projects/Temp_Converter/temp_converter_1.jpg" alt="Temperature Converter app interface" class="project-image">
+                        </div>
+                        <p class="project-detail">Convert Between Celicius, Fahrenheit, and Kelvin.</p>
+                        <div class="project-info">
+                            <div class="project-info-row">
+                                <span class="info-label">Technologies:</span>
+                                <span class="info-value">Android Studio, Java</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">Features:</span>
+                                <div class="info-value">
+                                    <p>Conversion between temprature units</p>
+                                </div>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">View:</span>
+                                <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Temprature-Converter" target="_blank" class="text-link">View on Github</a></span>
                             </div>
                         </div>
-                        <div class="project-info-row">
-                            <span class="info-label">View:</span>
-                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Temprature-Converter" target="_blank" class="text-link">View on Github</a></span>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-title-row">
+                            <h4 class="project-name">Course-Goals</h4>
+                            <span class="project-date">December 2025</span>
                         </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-title-row">
-                        <h4 class="project-name">Course-Goals</h4>
-                        <span class="project-date">December 2025</span>
-                    </div>
-                    <div class="project-images">
-                        <img src="./img/projects/course_goals/Adding_Goal.jpeg" alt="Course Goals adding goal interface" class="project-image">
-                        <img src="./img/projects/course_goals/Goals_list.jpeg" alt="Course Goals list view" class="project-image">
-                    </div>
-                    <p class="project-detail">Keep track of your goals!</p>
-                    <div class="project-info">
-                        <div class="project-info-row">
-                            <span class="info-label">Technologies:</span>
-                            <span class="info-value">React Native, JS, JSX</span>
+                        <div class="project-images">
+                            <img src="./img/projects/course_goals/Adding_Goal.jpeg" alt="Course Goals adding goal interface" class="project-image">
+                            <img src="./img/projects/course_goals/Goals_list.jpeg" alt="Course Goals list view" class="project-image">
                         </div>
-                        <div class="project-info-row">
-                            <span class="info-label">Features:</span>
-                            <div class="info-value">
-                                <p>State memory to keep track of tasks</p>
+                        <p class="project-detail">Keep track of your goals!</p>
+                        <div class="project-info">
+                            <div class="project-info-row">
+                                <span class="info-label">Technologies:</span>
+                                <span class="info-value">React Native, JS, JSX</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">Features:</span>
+                                <div class="info-value">
+                                    <p>State memory to keep track of tasks</p>
+                                </div>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">View:</span>
+                                <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Course-Goals-App" target="_blank" class="text-link">View on Github</a></span>
                             </div>
                         </div>
-                        <div class="project-info-row">
-                            <span class="info-label">View:</span>
-                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Course-Goals-App" target="_blank" class="text-link">View on Github</a></span>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-title-row">
+                            <h4 class="project-name">Mini-Guessing Game</h4>
+                            <span class="project-date">December 2025</span>
                         </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-title-row">
-                        <h4 class="project-name">Mini-Guessing Game</h4>
-                        <span class="project-date">December 2025</span>
-                    </div>
-                    <div class="project-images">
-                        <img src="./img/projects/mini_game/writing_number.jpeg" alt="Mini Guessing Game number input" class="project-image">
-                        <img src="./img/projects/mini_game/Guessing.jpeg" alt="Mini Guessing Game guessing screen" class="project-image">
-                    </div>
-                    <p class="project-detail">Computer Tries to guess your number!</p>
-                    <div class="project-info">
-                        <div class="project-info-row">
-                            <span class="info-label">Technologies:</span>
-                            <span class="info-value">React Native, JS, JSX</span>
+                        <div class="project-images">
+                            <img src="./img/projects/mini_game/writing_number.jpeg" alt="Mini Guessing Game number input" class="project-image">
+                            <img src="./img/projects/mini_game/Guessing.jpeg" alt="Mini Guessing Game guessing screen" class="project-image">
                         </div>
-                        <div class="project-info-row">
-                            <span class="info-label">Features:</span>
-                            <div class="info-value">
-                                <p>Random number Generation</p>
+                        <p class="project-detail">Computer Tries to guess your number!</p>
+                        <div class="project-info">
+                            <div class="project-info-row">
+                                <span class="info-label">Technologies:</span>
+                                <span class="info-value">React Native, JS, JSX</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">Features:</span>
+                                <div class="info-value">
+                                    <p>Random number Generation</p>
+                                </div>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">View:</span>
+                                <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Mini-Game" target="_blank" class="text-link">View on Github</a></span>
                             </div>
                         </div>
-                        <div class="project-info-row">
-                            <span class="info-label">View:</span>
-                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Mini-Game" target="_blank" class="text-link">View on Github</a></span>
-                        </div>
                     </div>
-                </div>
                 </div>
                 <!-- End MOBILE APP DEVELOPMENT Card -->
 
                 <!-- TERMINAL BASED Category Card -->
-                <div class="project-category-card">
+                <div class="project-category-card" data-category="terminal">
                     <div class="projects-header">
                         <h3>TERMINAL BASED</h3>
                     </div>
                     <div class="project-item">
-                    <div class="project-title-row">
-                        <h4 class="project-name">To-Do List</h4>
-                        <span class="project-date">August 2025</span>
-                    </div>
-                    <p class="project-detail">Keep track of your tasks. Tasks are stored on a local text file. Made using C++.</p>
-                    <div class="project-info">
-                        <div class="project-info-row">
-                            <span class="info-label">Technologies:</span>
-                            <span class="info-value">C++</span>
+                        <div class="project-title-row">
+                            <h4 class="project-name">To-Do List</h4>
+                            <span class="project-date">August 2025</span>
                         </div>
-                        <div class="project-info-row">
-                            <span class="info-label">Features:</span>
-                            <div class="info-value">
-                                <p>Adding, Removing, Editing Tasks</p>
-                                <p>Sorting Tasks Accroding to Date</p>
+                        <p class="project-detail">Keep track of your tasks. Tasks are stored on a local text file. Made using C++.</p>
+                        <div class="project-info">
+                            <div class="project-info-row">
+                                <span class="info-label">Technologies:</span>
+                                <span class="info-value">C++</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">Features:</span>
+                                <div class="info-value">
+                                    <p>Adding, Removing, Editing Tasks</p>
+                                    <p>Sorting Tasks Accroding to Date</p>
+                                </div>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">View:</span>
+                                <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/To-Do_List" target="_blank" class="text-link">View on Github</a></span>
                             </div>
                         </div>
-                        <div class="project-info-row">
-                            <span class="info-label">View:</span>
-                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/To-Do_List" target="_blank" class="text-link">View on Github</a></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-title-row">
-                        <h4 class="project-name">Tic-Tac-Toe</h4>
-                        <span class="project-date">August 2025</span>
-                    </div>
-                    <p class="project-detail">Simple XO Game. Made using C++.</p>
-                    <div class="project-info">
-                        <div class="project-info-row">
-                            <span class="info-label">Technologies:</span>
-                            <span class="info-value">C++</span>
-                        </div>
-                        <div class="project-info-row">
-                            <span class="info-label">View:</span>
-                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/TTT" target="_blank" class="text-link">View on Github</a></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-title-row">
-                        <h4 class="project-name">Contacts Manager</h4>
-                        <span class="project-date">August 2025</span>
-                    </div>
-                    <p class="project-detail">A very simple contacts manager project that I made while practicing OOP concepts.</p>
-                    <div class="project-info">
-                        <div class="project-info-row">
-                            <span class="info-label">Technologies:</span>
-                            <span class="info-value">Java</span>
-                        </div>
-                        <div class="project-info-row">
-                            <span class="info-label">View:</span>
-                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/ContactsManager" target="_blank" class="text-link">View on Github</a></span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <!-- End TERMINAL BASED Card -->
-
-                <!-- WEB DEVELOPMENT Category Card -->
-                <div class="project-category-card">
-                    <div class="projects-header">
-                        <h3>WEB DEVELOPMENT</h3>
                     </div>
                     <div class="project-item">
-                    <div class="project-title-row">
-                        <h4 class="project-name">Tic-Tac-Toe</h4>
-                        <span class="project-date">December 2025</span>
-                    </div>
-                    <div class="project-images">
-                        <img src="./img/projects/XO_web/idle.png" alt="Tic-Tac-Toe web game idle state" class="project-image">
-                        <img src="./img/projects/XO_web/Winning.png" alt="Tic-Tac-Toe winning screen" class="project-image">
-                    </div>
-                    <p class="project-detail">Simple XO Game.</p>
-                    <div class="project-info">
-                        <div class="project-info-row">
-                            <span class="info-label">Technologies:</span>
-                            <span class="info-value">HTML, CSS, JavaScript</span>
+                        <div class="project-title-row">
+                            <h4 class="project-name">Tic-Tac-Toe</h4>
+                            <span class="project-date">August 2025</span>
                         </div>
-                        <div class="project-info-row">
-                            <span class="info-label">View:</span>
-                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/TTT-Web" target="_blank" class="text-link">View on Github</a></span>
+                        <p class="project-detail">Simple XO Game. Made using C++.</p>
+                        <div class="project-info">
+                            <div class="project-info-row">
+                                <span class="info-label">Technologies:</span>
+                                <span class="info-value">C++</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">View:</span>
+                                <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/TTT" target="_blank" class="text-link">View on Github</a></span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                 <div class="project-item">
-                    <div class="project-title-row">
-                        <h4 class="project-name">Do!</h4>
-                        <span class="project-date">December 2025</span>
-                    </div>
-                    <div class="project-images">
-                        <img src="./img/projects/do/page.png" alt="Do! To-Do List interface" class="project-image" style="width: 500px;">
-                    </div>
-                    <p class="project-detail">A simple To-Do List. (It still needs some improvements as it is not fully finished)</p>
-                    <div class="project-info">
-                        <div class="project-info-row">
-                            <span class="info-label">Technologies:</span>
-                            <span class="info-value">HTML, CSS, JavaScript</span>
+                    <div class="project-item">
+                        <div class="project-title-row">
+                            <h4 class="project-name">Contacts Manager</h4>
+                            <span class="project-date">August 2025</span>
                         </div>
-                        <div class="project-info-row">
-                            <span class="info-label">View:</span>
-                            <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/Do-" target="_blank" class="text-link">View on Github</a></span>
+                        <p class="project-detail">A very simple contacts manager project that I made while practicing OOP concepts.</p>
+                        <div class="project-info">
+                            <div class="project-info-row">
+                                <span class="info-label">Technologies:</span>
+                                <span class="info-value">Java</span>
+                            </div>
+                            <div class="project-info-row">
+                                <span class="info-label">View:</span>
+                                <span class="info-value"><a href="https://github.com/Ahmed-Elsheshtawy/ContactsManager" target="_blank" class="text-link">View on Github</a></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                <!-- End WEB DEVELOPMENT Card -->
+                <!-- End TERMINAL BASED Card -->
             </div>
         </section>
 
