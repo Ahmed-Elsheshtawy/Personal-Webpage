@@ -84,6 +84,9 @@ function loadSectionFromHash() {
     if (hash) {
         const targetId = hash.substring(1);
         activateSection(targetId, false);
+    } else {
+        // Default to About section if no hash is present
+        activateSection('about', false);
     }
 }
 
