@@ -128,21 +128,52 @@ filterButtons.forEach(button => {
         this.classList.add('active');
         
         // Filter projects
-        projectCategories.forEach(category => {
-            const categoryValue = category.getAttribute('data-category');
-            
-            if (filterValue === 'all') {
-                category.classList.remove('hidden');
-                category.style.display = 'block';
-            } else {
-                if (categoryValue === filterValue) {
+        if (filterValue === 'featured') {
+            // Show only categories that contain featured projects
+            projectCategories.forEach(category => {
+                const hasFeaturedProject = category.querySelector('.featured-project');
+                if (hasFeaturedProject) {
                     category.classList.remove('hidden');
                     category.style.display = 'block';
+                    
+                    // Hide non-featured projects within this category
+                    const allProjects = category.querySelectorAll('.project-item');
+                    allProjects.forEach(project => {
+                        if (project.classList.contains('featured-project')) {
+                            project.style.display = 'block';
+                        } else {
+                            project.style.display = 'none';
+                        }
+                    });
                 } else {
                     category.classList.add('hidden');
                     category.style.display = 'none';
                 }
-            }
-        });
+            });
+        } else {
+            // Regular filtering logic
+            projectCategories.forEach(category => {
+                const categoryValue = category.getAttribute('data-category');
+                
+                // Show all projects within visible categories
+                const allProjects = category.querySelectorAll('.project-item');
+                allProjects.forEach(project => {
+                    project.style.display = 'block';
+                });
+                
+                if (filterValue === 'all') {
+                    category.classList.remove('hidden');
+                    category.style.display = 'block';
+                } else {
+                    if (categoryValue === filterValue) {
+                        category.classList.remove('hidden');
+                        category.style.display = 'block';
+                    } else {
+                        category.classList.add('hidden');
+                        category.style.display = 'none';
+                    }
+                }
+            });
+        }
     });
 });
