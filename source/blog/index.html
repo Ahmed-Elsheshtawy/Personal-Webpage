@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Khedr Elsheshtawy | Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./blog-index.css">
+    <link rel="icon" type="image/png" href="../img/github_pfp.jpeg">
+    <script src="./blog-index.js" defer></script>
+</head>
+<body>
+    <header class="blog-page-header">
+        <div class="blog-header-content">
+            <p class="blog-eyebrow">Ahmed Elsheshtawy</p>
+            <h1>Blog</h1>
+            <p class="blog-subtitle">Insights on technology, entrepreneurship, and learning through building.</p>
+        </div>
+        <a href="../index.html#blog" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Main Website
+        </a>
+    </header>
+
+    <main class="blog-layout" aria-label="Blog page layout">
+        <aside class="blog-slider" aria-label="Blog post selector">
+            <h2 class="slider-heading">All Posts</h2>
+
+            <!--
+                NEW BLOG MOLD (STEP 1: add a slider button)
+
+                <button
+                    type="button"
+                    class="blog-slide"
+                    data-post-id="your-unique-id"
+                    data-post-title="Your Blog Title"
+                    data-post-date="DD Month, YYYY"
+                    aria-pressed="false">
+                    <span class="slide-title">Your Blog Title</span>
+                    <span class="slide-date"><i class="fas fa-calendar"></i> DD Month, YYYY</span>
+                    <span class="slide-summary">Short summary shown in the left slider.</span>
+                </button>
+            -->
+
+                <button
+                    type="button"
+                    class="blog-slide"
+                    data-post-id="small-states-big-moves"
+                    data-post-title="Small States, Big Moves: How Gulf Diplomacy Is Trying to Stop a Regional War"
+                    data-post-date="29 Mar, 2026"
+                    aria-pressed="false">
+                    <span class="slide-title">Small States, Big Moves: How Gulf Diplomacy Is Trying to Stop a Regional War</span>
+                    <span class="slide-date"><i class="fas fa-calendar"></i> 29 Mar, 2026</span>
+                    <span class="slide-summary">A reflection on Gulf backchannel diplomacy, regional escalation, and why soft power matters in crises.</span>
+                </button>
+        </aside>
+
+        <section class="blog-reader" aria-live="polite">
+            <header class="reader-header">
+                <p class="reader-label">Now Reading</p>
+                <h2 id="reader-title">Select a blog post</h2>
+                <p id="reader-date">Date will appear here</p>
+            </header>
+
+            <!--
+                NEW BLOG MOLD (STEP 2: add matching blog content panel)
+                IMPORTANT: data-post-id must exactly match the button data-post-id.
+
+                <article class="blog-post-panel" data-post-id="your-unique-id">
+                    <h3 class="post-title">Your Blog Title</h3>
+                    <p class="post-subtitle">One-line subtitle for your post.</p>
+
+                    <section class="post-section">
+                        <h4>Introduction</h4>
+                        <p>Your introduction paragraph.</p>
+                    </section>
+
+                    <section class="post-section">
+                        <h4>Main Section</h4>
+                        <p>Your main content paragraph.</p>
+                    </section>
+
+                    <section class="post-section">
+                        <h4>Conclusion</h4>
+                        <p>Your conclusion paragraph.</p>
+                    </section>
+                </article>
+            -->
+
+            <article class="blog-post-panel" data-post-id="small-states-big-moves">
+                <section class="post-section">
+                    <p>
+                        So the Middle East is pretty tense right now. US-Israel strikes hitting Iran, oil markets freaking out, the whole region on edge.
+                        But here's the thing nobody talks about: while the big powers are making noise, countries like Qatar, the UAE, and Oman are quietly doing diplomacy.
+                        It's actually kind of impressive.
+                    </p>
+                </section>
+
+                <section class="post-section">
+                    <p>
+                        Living here as an eng student, I've gotten way more into geopolitics than I expected. And what's wild is how these smaller Gulf states are playing the game.
+                        They can't physically out-muscle anyone, but they're smart about staying relevant. Qatar has both a US base and channels to Iran. Oman traditionally bridges the gap.
+                        It sounds contradictory, but it's just hedging your bets.
+                    </p>
+                </section>
+
+                <section class="post-section">
+                    <h4>The Real Issue</h4>
+                    <p>
+                        For Gulf states, a full-blown war is literally an economic threat. The Strait of Hormuz is 20% of global oil supply. If that closes, their entire economy gets hit.
+                        So when they're pushing for talks, it's not charity—it's survival. They're just doing it quietly.
+                    </p>
+                </section>
+
+                <section class="post-section">
+                    <h4>Why It Matters</h4>
+                    <p>
+                        Back-channel diplomacy actually works. Look at 2019 when things cooled down, or the Yemen negotiations. Gulf countries usually have a hand in those.
+                        The craziest part? Patience pays off. Qatar invested decades in building influence—Al Jazeera, hosting events, being a mediator. Now when everyone needs someone to talk to, they're already at the table.
+                    </p>
+                    <p>
+                        Sometimes the loudest thing in a room isn't the noise. It's who everyone still trusts to listen.
+                    </p>
+                </section>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
