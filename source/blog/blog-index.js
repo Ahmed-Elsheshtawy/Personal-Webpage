@@ -12,7 +12,7 @@ function setReaderHeader(title, date) {
     }
 
     if (readerDate) {
-        readerDate.textContent = date || DEFAULT_READER_DATE;
+        readerDate.innerHTML = `<i class="fa-solid fa-calendar-day"></i> ${date || DEFAULT_READER_DATE}`;
     }
 }
 
