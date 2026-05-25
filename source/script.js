@@ -171,9 +171,48 @@ filterButtons.forEach(button => {
                     } else {
                         category.classList.add('hidden');
                         category.style.display = 'none';
+                        category.style.display = 'none';
                     }
                 }
             });
         }
+    });
+});
+
+// Explanation Filter Functionality
+const explanationFilterButtons = document.querySelectorAll('.explanation-filters .filter-btn');
+const explanationCards = document.querySelectorAll('.explanation-card');
+
+// Ensure all explanations are visible on page load
+explanationCards.forEach(card => {
+    card.classList.remove('hidden');
+    card.style.display = 'block';
+});
+
+explanationFilterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const filterValue = this.getAttribute('data-filter');
+        
+        // Update active button
+        explanationFilterButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Filter explanations
+        explanationCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            
+            if (filterValue === 'all') {
+                card.classList.remove('hidden');
+                card.style.display = 'block';
+            } else {
+                if (cardCategory === filterValue) {
+                    card.classList.remove('hidden');
+                    card.style.display = 'block';
+                } else {
+                    card.classList.add('hidden');
+                    card.style.display = 'none';
+                }
+            }
+        });
     });
 });

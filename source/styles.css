@@ -1437,3 +1437,302 @@ body {
     padding: 2px 6px;
     border-radius: 3px;
 }
+
+/* ================================================
+   EXPLANATIONS SECTION STYLES
+   ================================================ */
+
+/* Explanation Filter Buttons */
+.explanation-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 25px 0;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    border: 1px solid #e0e0e0;
+}
+
+/* Explanations Container */
+.explanations-container {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Explanation Card */
+.explanation-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.explanation-card.hidden {
+    display: none !important;
+}
+
+.explanation-card:hover {
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.explanation-header {
+    background: linear-gradient(135deg, #1a5f7a 0%, #2d8099 100%);
+    color: #ffffff;
+    padding: 20px 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.explanation-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    flex: 1;
+    color: #ffffff;
+}
+
+.explanation-date {
+    padding: 6px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
+}
+
+.explanation-description {
+    padding: 20px 25px;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    background: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0;
+    font-family: monospace;
+}
+
+/* Explanation Content - Side by side on desktop, stacked on mobile */
+.explanation-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+.explanation-pdf,
+.explanation-video {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.viewer-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.viewer-label i {
+    font-size: 16px;
+    color: #1a5f7a;
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: #f5f5f5;
+}
+
+/* Video Viewer */
+.video-viewer {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: #000;
+}
+
+/* Download and Open Buttons */
+.download-btn,
+.open-btn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #1a5f7a 0%, #2d8099 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    font-family: monospace;
+}
+
+.download-btn:hover,
+.open-btn:hover {
+    background: linear-gradient(135deg, #2d8099 0%, #3d9aaf 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 95, 122, 0.3);
+}
+
+.download-btn:active,
+.open-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(26, 95, 122, 0.2);
+}
+
+/* ================================================
+   RESPONSIVE EXPLANATIONS SECTION
+   ================================================ */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .explanation-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .pdf-viewer,
+    .video-viewer {
+        height: 400px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .explanation-filters {
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .explanation-card {
+        margin-bottom: 25px;
+    }
+    
+    .explanation-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+    
+    .explanation-title {
+        font-size: 18px;
+    }
+    
+    .explanation-description {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+    
+    .explanation-content {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .pdf-viewer,
+    .video-viewer {
+        height: 350px;
+        border-width: 1px;
+    }
+    
+    .download-btn,
+    .open-btn {
+        width: 100%;
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+    .explanation-filters {
+        padding: 12px 10px;
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+    
+    .explanation-header {
+        padding: 12px 15px;
+    }
+    
+    .explanation-title {
+        font-size: 16px;
+    }
+    
+    .explanation-date {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+    
+    .explanation-description {
+        padding: 12px 15px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    
+    .explanation-content {
+        padding: 12px;
+    }
+    
+    .viewer-label {
+        font-size: 13px;
+    }
+    
+    .pdf-viewer,
+    .video-viewer {
+        height: 300px;
+    }
+    
+    .download-btn,
+    .open-btn {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+}
+
+/* ================================================
+   END EXPLANATIONS SECTION STYLES
+   ================================================ */
