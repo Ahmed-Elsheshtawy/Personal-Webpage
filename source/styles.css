@@ -148,7 +148,6 @@ body {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
     position: relative;
     overflow: hidden;
 }
@@ -429,7 +428,6 @@ body {
     line-height: 1.8;
     background: #ffffff;
     border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     overflow: hidden;
     margin-bottom: 35px;
     transition: all 0.3s ease;
@@ -450,7 +448,6 @@ body {
 .news-item .news-image{
     width: 280px;
     height: auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
     border: 2px solid #fff;
 }
@@ -506,7 +503,6 @@ body {
 }
 .about-images img {
     width: 100%;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .project-item strong{
@@ -540,7 +536,6 @@ body {
     padding: 20px;
     background-color: #ffffff;
     border-left: 4px solid #e0d5d0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
 }
 
@@ -872,7 +867,6 @@ body {
 .education-category-card {
     background-color: #ffffff;
     padding: 0;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border: 1px solid #e0e0e0;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -884,7 +878,6 @@ body {
     padding: 15px 25px;
     margin-bottom: 0;
     margin-top: 0;
-    box-shadow: none;
 }
 
 .education-header h3 {
@@ -1044,14 +1037,12 @@ body {
     background: linear-gradient(135deg, #000 0%, #333 100%);
     color: white;
     border-color: #000;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .project-category-card {
     background-color: #ffffff;
     padding: 0;
     margin-bottom: 35px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border: 1px solid #e0e0e0;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -1067,7 +1058,6 @@ body {
     padding: 15px 25px;
     margin-bottom: 0;
     margin-top: 0;
-    box-shadow: none;
 }
 
 .projects-header h3 {
@@ -1103,7 +1093,6 @@ body {
 .project-image{
     width: 280px;
     height: auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
     border: 2px solid #fff;
 }
@@ -1118,7 +1107,6 @@ body {
 .featured-project {
     background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
     border-left: 5px solid #ffa500;
-    box-shadow: 0 2px 8px rgba(255, 165, 0, 0.15);
     position: relative;
 }
 
@@ -1131,7 +1119,6 @@ body {
     font-weight: 700;
     letter-spacing: 0.5px;
     margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(255, 165, 0, 0.3);
     animation: subtle-pulse 3s ease-in-out infinite;
 }
 
@@ -1144,22 +1131,18 @@ body {
 @keyframes star-shine {
     0%, 100% {
         transform: rotate(0deg) scale(1);
-        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
     }
     50% {
         transform: rotate(-10deg) scale(1.1);
-        filter: drop-shadow(0 0 4px rgba(255, 255, 255, 1));
     }
 }
 
 @keyframes subtle-pulse {
     0%, 100% {
         transform: scale(1);
-        box-shadow: 0 2px 6px rgba(255, 165, 0, 0.3);
     }
     50% {
         transform: scale(1.02);
-        box-shadow: 0 3px 10px rgba(255, 165, 0, 0.4);
     }
 }
 
@@ -1375,7 +1358,6 @@ body {
     background-color: #ffffff;
     padding: 0;
     margin-bottom: 35px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border: 1px solid #e0e0e0;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -1391,7 +1373,6 @@ body {
     padding: 20px 25px;
     margin-bottom: 0;
     margin-top: 0;
-    box-shadow: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1502,7 +1483,6 @@ body {
 .download-btn:active,
 .open-btn:active {
     transform: translateY(0);
-    box-shadow: 0 2px 6px rgba(26, 95, 122, 0.2);
 }
 
 /* ================================================
