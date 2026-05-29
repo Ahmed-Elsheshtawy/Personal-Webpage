@@ -216,3 +216,46 @@ explanationFilterButtons.forEach(button => {
         });
     });
 });
+
+// Copy Email Button Functionality
+const copyEmailBtn = document.querySelector('.copy-email-btn');
+if (copyEmailBtn) {
+    copyEmailBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const email = 'ahmedk.elsheshtawy@gmail.com';
+        
+        // Copy to clipboard using modern Clipboard API
+        navigator.clipboard.writeText(email).then(() => {
+            // Change button appearance to show success
+            this.classList.add('copied');
+            const originalIcon = this.innerHTML;
+            
+            // Change icon to checkmark temporarily
+            this.innerHTML = '<i class="fas fa-check"></i>';
+            
+            // Reset after 2 seconds
+            setTimeout(() => {
+                this.classList.remove('copied');
+                this.innerHTML = originalIcon;
+            }, 2000);
+        }).catch(err => {
+            // Fallback for older browsers
+            const textarea = document.createElement('textarea');
+            textarea.value = email;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            
+            // Show success feedback
+            this.classList.add('copied');
+            const originalIcon = this.innerHTML;
+            this.innerHTML = '<i class="fas fa-check"></i>';
+            
+            setTimeout(() => {
+                this.classList.remove('copied');
+                this.innerHTML = originalIcon;
+            }, 2000);
+        });
+    });
+}

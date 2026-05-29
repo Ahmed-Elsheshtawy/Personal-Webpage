@@ -371,15 +371,38 @@ body {
 }
 
 .contact-link {
+    display: inline;
+    color: #700000;
+    text-decoration: none;
+    text-decoration:dotted underline;
+}
+
+.email-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.copy-email-btn {
+    background: none;
+    border: none;
+    color: #700000;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: fit-content;
-    padding: 10px;
-    background: #700000;
-    color: #fff;
-    text-decoration: none;
-    margin-top: 15px;
+}
+
+.copy-email-btn:hover {
+    color: #a00000;
+}
+
+.copy-email-btn.copied {
+    color: #2ecc71;
 }
 
 .about-text strong {
