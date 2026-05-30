@@ -94,16 +94,6 @@ function loadSectionFromHash() {
 loadSectionFromHash();
 window.addEventListener('hashchange', loadSectionFromHash);
 
-// Disabling right-click context menu
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
-
-// Disabling text selection
-document.addEventListener('selectstart', function(e) {
-    e.preventDefault();
-});
-
 // Disabling drag and drop for images and media
 document.addEventListener('dragstart', function(e) {
     e.preventDefault();
