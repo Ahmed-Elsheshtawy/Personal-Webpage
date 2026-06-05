@@ -483,7 +483,7 @@ body {
     width: 280px;
     height: auto;
     transition: all 0.3s ease;
-    border: 2px solid #fff;
+    border: 2px solid maroon;
 }
 .news-item h3 {
     font-size: 22px;
@@ -1128,7 +1128,7 @@ body {
     width: 280px;
     height: auto;
     transition: all 0.3s ease;
-    border: 2px solid #5e3030;
+    border: 2px solid maroon;
 }
 
 .project-item:last-child {
