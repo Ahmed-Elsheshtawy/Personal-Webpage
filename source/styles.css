@@ -1128,7 +1128,7 @@ body {
     width: 280px;
     height: auto;
     transition: all 0.3s ease;
-    border: 2px solid #fff;
+    border: 2px solid #5e3030;
 }
 
 .project-item:last-child {
