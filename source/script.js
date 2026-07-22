@@ -208,12 +208,11 @@ explanationFilterButtons.forEach(button => {
 });
 
 // Copy Email Button Functionality
-const copyEmailBtn = document.querySelector('.copy-email-btn');
-if (copyEmailBtn) {
+document.querySelectorAll('.copy-email-btn').forEach(function(copyEmailBtn) {
     copyEmailBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        const email = 'ahmedk.elsheshtawy@gmail.com';
-        
+        const email = this.dataset.copyValue || 'ahmedk.elsheshtawy@gmail.com';
+
         // Copy to clipboard using modern Clipboard API
         navigator.clipboard.writeText(email).then(() => {
             // Change button appearance to show success
@@ -248,4 +247,4 @@ if (copyEmailBtn) {
             }, 2000);
         });
     });
-}
+});

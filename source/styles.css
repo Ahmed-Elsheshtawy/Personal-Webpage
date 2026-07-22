@@ -584,6 +584,16 @@ body {
 .nav-icon{
     margin-right: 8px;
 }
+
+.nima-nav-icon {
+    height: 16px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.nav-link.active .nima-nav-icon {
+    filter: brightness(0) invert(1);
+}
 /* Responsive Design */
 @media (max-width: 1200px) {
     .about-content {
@@ -761,7 +771,22 @@ body {
     .project-name {
         font-size: 16px;
     }
-    
+
+    /* Ni'ma section */
+    .nima-panel,
+    .nima-gallery-group {
+        margin: 0 15px 20px;
+    }
+
+    .nima-topbar {
+        padding: 12px 18px;
+    }
+
+    .nima-body {
+        padding: 18px;
+    }
+
+
     .project-date {
         font-size: 11px;
     }
@@ -1124,7 +1149,117 @@ body {
     margin-bottom: 30px;
 }
 
+/* Ni'ma Section Styling */
+.nima-panel {
+    margin: 0 30px 30px;
+    background: #f9f9f9;
+    border: 1px solid #d0d0d0;
+}
 
+.nima-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    padding: 15px 25px;
+}
+
+.nima-wordmark-logo {
+    height: 44px;
+    width: auto;
+}
+
+.nima-header-icon {
+    height: 36px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.nima-tagline-pill {
+    display: inline-flex;
+    align-items: center;
+    color: #4bd191;
+    border: 1px solid #4bd191;
+    padding: 5px 14px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nima-body {
+    padding: 25px;
+}
+
+.nima-cta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.nima-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.nima-btn-primary {
+    background: #1a7a52;
+    color: #fff;
+    border: 1px solid #1a7a52;
+}
+
+.nima-btn-primary:hover {
+    background: #156341;
+}
+
+.nima-btn-outline {
+    border: 1px solid #333;
+    color: #1a1a1a;
+    background: #fff;
+}
+
+.nima-btn-outline:hover {
+    background: #f0f0f0;
+}
+
+.nima-gallery-group {
+    margin: 0 30px 30px;
+    background: #f9f9f9;
+    border: 1px solid #d0d0d0;
+}
+
+.nima-gallery-title {
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 12px 25px;
+    margin: 0;
+}
+
+.nima-gallery-group .project-images {
+    margin-bottom: 0;
+}
+
+.nima-gallery-group .project-image {
+    border-color: #1a7a52;
+}
+
+.project-item.featured-project.nima-info-card {
+    border-left: 5px solid #1a7a52;
+}
 
 /* Featured Project Styling */
 .featured-project {
@@ -1149,6 +1284,12 @@ body {
     margin-right: 5px;
     animation: star-shine 2s ease-in-out infinite;
     display: inline-block;
+}
+
+.launching-badge {
+    background: linear-gradient(135deg, #1a7a3c 0%, #2ea84a 100%);
+    margin-left: 10px;
+    animation: none;
 }
 
 @keyframes star-shine {
