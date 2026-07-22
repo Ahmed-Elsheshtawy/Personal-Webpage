@@ -1,0 +1,60 @@
+# Vercel Web Analytics Implementation
+
+## Summary
+Successfully installed and configured Vercel Web Analytics for this static HTML website following the latest official Vercel documentation.
+
+## Changes Made
+
+### Modified Files:
+- **source/index.html** - Added Vercel Web Analytics scripts to the `<head>` section
+
+## Implementation Details
+
+### Framework Detection:
+This is a vanilla HTML/CSS/JavaScript static website with no framework dependencies. The project structure includes:
+- index.html (main entry point)
+- styles.css (styling)
+- script.js (JavaScript functionality)
+- Static assets (images, CV, etc.)
+
+### Analytics Integration:
+Following the official Vercel Analytics documentation for vanilla/static sites, I added two script tags to the HTML `<head>` section just before the closing `</head>` tag:
+
+1. **Initialization script**: Sets up the `window.va` function to queue analytics calls
+2. **Analytics loader**: Deferred loading of the Vercel insights script from `/_vercel/insights/script.js`
+
+The implementation follows the exact pattern recommended in the Vercel documentation:
+```html
+<script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+```
+
+## Why This Approach:
+- **No package installation required**: Static HTML sites don't need the `@vercel/analytics` npm package
+- **Automatic tracking**: Vercel automatically serves the analytics script at `/_vercel/insights/script.js` when deployed
+- **Minimal overhead**: The script is loaded with the `defer` attribute to avoid blocking page rendering
+- **Future-proof**: Uses the latest implementation pattern from Vercel's official documentation
+
+## Next Steps:
+Once deployed to Vercel, the analytics will automatically start tracking:
+1. Page views
+2. User sessions
+3. Custom events (if implemented later)
+
+To view analytics data:
+1. Deploy the site to Vercel
+2. Enable Web Analytics in the Vercel dashboard (Analytics section)
+3. Analytics data will appear in the dashboard after users visit the site
+
+## Testing:
+- Verified the HTML file loads correctly with a local HTTP server
+- Confirmed the scripts are properly placed in the `<head>` section
+- No build process or dependencies required for this static site
+
+## Notes:
+- No package.json exists, so no dependencies to install
+- No build process required
+- The analytics script will only load when deployed on Vercel
+- For local development, the script will gracefully fail but won't break the site
