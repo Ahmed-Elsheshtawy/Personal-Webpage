@@ -1162,7 +1162,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px;
-    background: linear-gradient(135deg, #000 0%, #333 100%);
+    background: #1a1a1a;
     padding: 15px 25px;
 }
 
@@ -1240,7 +1240,7 @@ body {
 }
 
 .nima-gallery-title {
-    background: linear-gradient(135deg, #000 0%, #333 100%);
+    background: #1a1a1a;
     color: #fff;
     font-size: 15px;
     font-weight: 700;
